@@ -1,8 +1,8 @@
 # 0x01-python-if_else_loops_functions
 ## 0-positive_or_negative.py
-Will assign a random signed number to the variable number each time it is executed.
+Determines if a random number is positive or negative.
 ## 1-last_digit.py
-Will assign a random signed number to the variable number each time it is executed.
+Determines the last digit of a number and the range.
 ## 2-print_alphabet.py
 A program that prints the ASCII alphabet, in lowercase.
 ## 3-print_alphabt.py
