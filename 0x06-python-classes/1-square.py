@@ -3,4 +3,4 @@ class Square:
     """class square."""
     def __init__(self, new_int=None):
         """def init"""
-        self._Square__size =  new_int
+        self._Square__size = new_int
