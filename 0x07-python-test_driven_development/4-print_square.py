@@ -10,6 +10,8 @@ def print_square(size):
     """ Prints a square by number given
     >>> print_square(20)
     """
+    if size == None:
+        return None
     if type(size) == float and size < 0:
         raise TypeError("size must be an integer")
     if type(size) != int:

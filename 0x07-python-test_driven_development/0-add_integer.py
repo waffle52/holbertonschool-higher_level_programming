@@ -10,6 +10,8 @@ def add_integer(a, b=98):
     """ Returns addition of both integers
     >>> result = add_integer(10, 15)
     """
+    if a == None or b == None:
+        return None
     if type(a) == float or type(b) == float:
         a = int(a)
         b = int(b)
