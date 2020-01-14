@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""
+
+Module to add two numbers together
+
+"""
+
+
 def add_integer(a, b=98):
+    """ Returns addition of both integers
+    >>> result = add_integer(10, 15)
+    """
     if type(a) == float or type(b) == float:
         a = int(a)
         b = int(b)

@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""
+
+Module that seperates text based on chars
+
+"""
+
+
 def text_indentation(text):
+    """
+    >>> text_indentation("This text should go to new line. hello therex")
+    """
     if type(text) != str:
         raise TypeError("text must be a string")
     it = iter(text)

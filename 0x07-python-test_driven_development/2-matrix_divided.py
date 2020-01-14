@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""
+Module to copy and dive every element in list
+
+"""
+
+
 def matrix_divided(matrix, div):
+    """ Returns new list from given list divided by num passed
+    >>> new_list = [10, 16, 8]
+    >>> result = matrix_divided(new_list, 2)
+    """
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
