@@ -1,5 +1,5 @@
 # 0x09-python-everything_is_object
-Different kind of project, Answers for given questions.
+Different kind of project, Answers for given questions and some problems.
 ## 0-answer.txt
 Answer to question.
 ## 1-answer.txt
@@ -38,8 +38,8 @@ Answer to question.
 Answer to question.
 ## 18-answer.txt
 Answer to question.
-## 19-answer.txt
-Answer to question.
+## 19-copy_list.py
+Returns a copy of a list.
 ## 20-answer.txt
 Answer to question.
 ## 21-answer.txt
