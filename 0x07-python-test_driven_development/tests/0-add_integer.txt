@@ -26,3 +26,8 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 >>> add_integer(10, a)
 Traceback (most recent call last):
 ValueError: cannot convert float NaN to integer
+>>> import sys
+>>> a = float("inf")
+>>> add_integer(10, a)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
