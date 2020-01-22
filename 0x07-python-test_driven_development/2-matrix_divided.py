@@ -10,13 +10,13 @@ def matrix_divided(matrix, div):
     >>> new_list = [10, 16, 8]
     >>> result = matrix_divided(new_list, 2)
     """
-    if matrix == None or div == None:
+    if matrix is None or div is None:
         return None
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    new_list = list(matrix)
+    new_list = matrix[:]
     num = len(new_list[0])
     for i in range(len(new_list)):
         if num != len(new_list[i]):
