@@ -6,9 +6,5 @@ def read_lines(filename="", nb_lines=0):
             print(MyFile.read(), end="")
         else:
             MyFile.seek(0)
-            i = 1
-            for line in MyFile:
-                print(line, end="")
-                if i == nb_lines:
-                    break
-                i += 1
+            for i in range(1, nb_lines + 1):
+                print(MyFile.readline(), end="")
