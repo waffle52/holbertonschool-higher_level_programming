@@ -5,7 +5,10 @@ def read_lines(filename="", nb_lines=0):
         if nb_lines <= 0 or nb_lines >= len(MyFile.readlines()):
             print(MyFile.read())
         else:
-            MyFile.close()
             with open(filename, encoding="utf-8") as MyFileTest:
-                for i in range(1, nb_lines + 1):
-                    print(MyFileTest.readline(), end="")
+                i = 1
+                for line in MyFileTest:
+                    print(line, end="")
+                    if i == nb_lines:
+                        break
+                    i += 1
