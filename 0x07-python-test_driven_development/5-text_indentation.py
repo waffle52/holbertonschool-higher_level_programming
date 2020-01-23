@@ -10,7 +10,7 @@ def text_indentation(text):
     """
     >>> text_indentation("This text should go to new line. hello therex")
     """
-    if text == None:
+    if text is None:
         return None
     if type(text) != str:
         raise TypeError("text must be a string")
