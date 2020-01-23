@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    new_list = matrix[:]
+    new_list = list(map(list, matrix))
     num = len(new_list[0])
     for i in range(len(new_list)):
         if num != len(new_list[i]):
