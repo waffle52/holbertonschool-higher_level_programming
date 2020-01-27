@@ -1,4 +1,5 @@
-#!/usr/env/python3
+#!/usr/bin/python3
+""" Class Base"""
 
 
 class Base:
