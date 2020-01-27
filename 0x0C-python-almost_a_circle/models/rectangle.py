@@ -1,4 +1,9 @@
+#!/usr/bin/python3
+
+
 from models.base import Base
+""" importing Base file to set rules of ojbect """
+
 
 class Rectangle(Base):
 
@@ -83,9 +88,11 @@ class Rectangle(Base):
 
     def __str__(self):
         """ Function that returns string info of class """
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                self.y, self.width, self.height))
 
     def update(self, *args):
+        """ Updates value from args """
         if len(args) >= 1:
             super().__init__(args[0])
         if len(args) >= 2:
