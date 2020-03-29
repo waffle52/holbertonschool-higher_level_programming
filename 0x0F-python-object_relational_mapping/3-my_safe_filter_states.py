@@ -8,8 +8,9 @@ if __name__ == "__main__":
                          user=sys.argv[1], passwd=sys.argv[2],
                          db=sys.argv[3])
     cur = db.cursor()
-    com = "SELECT * FROM states WHERE BINARY name='%s' ORDER BY states.id ASC;"
-    cur.execute(com % sys.argv[4])
+    arg = sys.argv[4]
+    cur.execute("""SELECT * FROM states WHERE BINARY name = %s ORDER BY
+    states.id ASC;""", (arg,))
     result = cur.fetchall()
 
     for x in result:
