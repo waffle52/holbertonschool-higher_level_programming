@@ -14,3 +14,6 @@ if __name__ == "__main__":
 
     for x in result:
         print(x)
+
+    cur.close()
+    db.close()
