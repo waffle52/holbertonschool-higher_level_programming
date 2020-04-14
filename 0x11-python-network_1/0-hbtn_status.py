@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" """
+""" Scrip that fetches info from url"""
 import urllib.request
 
 if __name__ == "__main__":
