@@ -14,7 +14,7 @@ if __name__ == "__main__":
     r = requests.post(url, data=letter)
 
     try:
-        if r.json().text != {}:
+        if r.json() != {}:
             print("[{}] {}".format(r.json().get('id'), r.json().get('name')))
         else:
             print("No result")
