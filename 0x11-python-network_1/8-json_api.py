@@ -11,9 +11,9 @@ if __name__ == "__main__":
         letter = {'q': ''}
     r = requests.post(url, letter)
     try:
-        if (r.json()):
+        if (r.json() and r.json != ""):
             print("[{}]: {}".format(r.json().get('id'), r.json().get('name')))
-    except ValueError:
-        print("No result")
+        else:
+            print("No result")
     except:
         print("Not a valid JSON")
