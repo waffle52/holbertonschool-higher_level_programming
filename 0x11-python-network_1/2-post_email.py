@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" """
+""" Script to POST request to address pass as argument """
 import urllib.request
 import urllib.parse
 import sys
