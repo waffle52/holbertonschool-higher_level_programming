@@ -5,7 +5,7 @@ import sys
 
 if __name__ == "__main__":
     url = "http://a196c17a0320.19.hbtn-cod.io:5000/search_user"
-    if (len(sys.argv) > 1):
+    if (len(sys.argv) >= 2):
         letter = {'q': sys.argv[1]}
     else:
         letter = {'q': ''}
@@ -13,7 +13,7 @@ if __name__ == "__main__":
     try:
         if (r.json()):
             print("[{}]: {}".format(r.json().get('id'), r.json().get('name')))
-        else:
-            print("No result")
+    except ValueError:
+        print("No result")
     except:
         print("Not a valid JSON")
