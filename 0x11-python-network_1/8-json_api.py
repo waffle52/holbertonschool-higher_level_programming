@@ -5,13 +5,13 @@ import sys
 
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
-    if (len(sys.argv) < 2):
+    if (len(sys.argv) <= 1):
         letter = ""
     else:
         letter = sys.argv[1]
 
     var = {'q': letter}
-    r = requests.post(url, data=letter)
+    r = requests.post(url, data=var)
 
     try:
         if r.json() != {}:
