@@ -4,7 +4,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    url = "http://a196c17a0320.19.hbtn-cod.io:5000/search_user"
+    url = "http://0.0.0.0:5000/search_user"
     if (len(sys.argv) >= 2):
         letter = {'q': sys.argv[1]}
     else:
