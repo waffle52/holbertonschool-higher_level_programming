@@ -13,4 +13,4 @@ if __name__ == "__main__":
         y = len(data)
     for x in range(0, y):
         print("{}: {}".format(data[x]['sha'],
-                              data[x]['commit']['author']['name']))
+                              data[x]['author']['login']))
