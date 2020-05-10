@@ -47,4 +47,4 @@ if __name__ == "__main__":
     data = search_resp.json()
     for x in data['statuses']:
         print("[{}] {} by {}".format(x.get('id'), x.get('text'),
-                                     x['user']['screen_name']))
+                                     x['user']['name']))
