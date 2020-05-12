@@ -9,4 +9,3 @@ fs.readFile(filename, (err, data) => {
     console.log(data.toString());
   }
 });
-// console.log(content);
