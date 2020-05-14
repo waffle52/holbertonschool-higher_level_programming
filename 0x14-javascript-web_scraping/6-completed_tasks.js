@@ -1,32 +1,20 @@
 #!/usr/bin/node
 
 const request = require('request');
-let jsonObj;
-const List = {};
-let track = 0;
+const list = {};
 const url = process.argv[2];
-let curNum = 0;
 
 request.get(url, 'utf8', function (err, response, body) {
   if (err) { throw (err); }
-  jsonObj = JSON.parse(body);
-  curNum = jsonObj[0].userId;
-  list(jsonObj, 0, curNum);
-  console.log(List);
-});
 
-function list (jsonObj, idx, curNum) {
-  if (idx >= jsonObj.length) {
-    List[curNum] = track;
-    return;
+  const data = JSON.parse(body);
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].completed === true) {
+      if (!(data[i].userId in list)) {
+        list[data[i].userId] = 0;
+      }
+      list[data[i].userId] += 1;
+    }
   }
-  if (curNum !== jsonObj[idx].userId) {
-    List[curNum] = track;
-    curNum = jsonObj[idx].userId;
-    track = 0;
-  }
-  if (jsonObj[idx].completed === true) {
-    track++;
-  }
-  list(jsonObj, idx + 1, curNum);
-}
+  console.log(list);
+});
