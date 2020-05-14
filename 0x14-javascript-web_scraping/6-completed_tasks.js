@@ -8,7 +8,7 @@ const url = process.argv[2];
 let curNum = 0;
 
 request.get(url, 'utf8', function (err, response, body) {
-  if (err) { throw (err) }
+  if (err) { throw (err); }
   jsonObj = JSON.parse(body);
   curNum = jsonObj[0].userId;
   list(jsonObj, 0, curNum);
