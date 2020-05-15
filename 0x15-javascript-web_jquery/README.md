@@ -47,3 +47,36 @@ The translation of “hello” must be display in the HTML tag DIV#hello
 You can’t use document.querySelector to select the HTML tag
 You must use the jQuery API
 Your script must work when it is imported from the HEAD tag
+## 100-script.js
+Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
+You must use document.querySelector to select the HTML tag
+You can’t use the jQuery API
+Note: Your script must be imported from the HEAD tag, not at the end of the HTML
+## 101-script.js
+Write a Javascript script that adds, removes and clears LI elements from a list when the user clicks:
+The new element must be: <li>Item</li>
+The new element must be added to UL.my_list
+When the user clicks on DIV#add_item: a new element is added to the list
+When the user clicks on DIV#remove_item: a last element is removed to the list
+When the user clicks on DIV#clear_list: all elements of the list are removed
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
+You script must be work when it imported from the HEAD tag
+## 102-script.js
+Write a Javascript script that fetches and prints how to say “Hello” depending of the language
+You should use this API service: https://www.fourtonfish.com/hellosalut/hello/
+The language code will be the value entered in the tag INPUT#language_code (ex: es, fr, en etc.)
+The translation must be fetch when the user clicks on INPUT#btn_translate
+The translation of “Hello” must be display in the HTML tag DIV#hello
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
+You script must be work when it imported from the HEAD tag
+## 103-script.js
+Write a Javascript script that fetches and prints how to say “Hello” depending of the language
+You should use this API service: https://www.fourtonfish.com/hellosalut/hello/
+The language code will be the value entered in the tag INPUT#language_code (ex: es, fr, en etc.)
+The translation must be fetch when the user clicks on INPUT#btn_translate OR presses ENTER when the focus is on INPUT#language_code
+The translation of “Hello” must be display in the HTML tag DIV#hello
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
+You script must be work when it imported from the HEAD tag
